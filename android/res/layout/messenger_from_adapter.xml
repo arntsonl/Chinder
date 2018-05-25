@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/messengerFromLayout"
+    android:minHeight="60dp">
+    <ImageView
+        android:id="@+id/messengerImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/chinder_profile_border"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Something goes here..."
+        android:id="@+id/messengerFromText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:gravity="left|top"
+        android:layout_toRightOf="@+id/messengerImage"
+        android:layout_toEndOf="@+id/messengerImage"
+        android:background="@drawable/chat_from"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="25dp"
+        android:minHeight="60dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sent at 12:05 AM"
+        android:id="@+id/messengerFromAt"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/messengerImage"
+        android:paddingLeft="20dp"
+        android:textColor="#33000000"
+        android:paddingBottom="10dp" />
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chinderapp.chinder"
+    android:versionCode="5"
+    android:versionName="1.0.4" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:name=".ChinderApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/parse_app_id" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="@string/parse_client_key" />
+
+        <activity
+            android:name=".ChinderStartActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_chinder_start"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChinderSignUpActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_chinder_sign_up"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ChinderLoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_chinder_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ChinderMatchScreenActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_chinder_match_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ChinderProfileActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_chinder_profile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ChinderMatchesActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_chinder_matches"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ChinderMessengerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_chinder_messenger"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+        <service
+            android:name=".EventPollService"
+            android:exported="false" >
+        </service>
+        <receiver android:process=":remoteEventPollAlarm" android:name="EventPollAlarm"></receiver>
+    </application>
+
+</manifest>

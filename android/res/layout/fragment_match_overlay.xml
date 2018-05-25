@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="1000dp"
+    android:minHeight="450dp"
+    tools:context="com.chinderapp.chinder.DialogMatchOverlay"
+    android:background="#10000000"
+    android:gravity="fill_horizontal|fill_vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chinMatchImageView"
+        android:layout_gravity="center_horizontal|top"
+        android:src="@drawable/chin_match_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You and chinder fancy each other&apos;s chins"
+        android:id="@+id/chinMatchTextView"
+        android:layout_below="@+id/chinMatchImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:id="@+id/chinMatchFromImageView"
+        android:layout_below="@+id/chinMatchTextView"
+        android:layout_alignLeft="@+id/chinMatchTextView"
+        android:layout_alignStart="@+id/chinMatchTextView"
+        android:background="@drawable/chinder_profile_border"
+        android:src="@drawable/default_profile"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginTop="25dp" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:id="@+id/chinMatchToImageView"
+        android:background="@drawable/chinder_profile_border"
+        android:src="@drawable/default_profile"
+        android:nestedScrollingEnabled="true"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/chinMatchTextView"
+        android:layout_alignEnd="@+id/chinMatchTextView" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Look for another chin"
+        android:id="@+id/chinMatchButton"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:singleLine="false"
+        android:background="@drawable/chinder_button_white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

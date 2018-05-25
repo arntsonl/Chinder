@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="parse_app_id">6nQOjXZbTmA4le5ynqdQAGsFk9MG0UDbvoJuYJy6</string>
+    <string name="parse_client_key">AIOSAwICMJ7ufCD43BHw0js9LkHfDadQ4gH04Izg</string>
+
+    <string name="chinder_server">https://chinder.parseapps.com</string>
+    <string name="chinder_server_secure">https://chinder.parseapps.com</string>
+
+    <string name="app_name">Chinder</string>
+    <string name="title_activity_chinder_start">Chinder</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_chinder_sign_up">ChinderSignUpActivity</string>
+    <string name="title_activity_chinder_login">ChinderLoginActivity</string>
+    <string name="title_activity_chinder_match_screen">ChinderMatchScreenActivity</string>
+    <string name="title_activity_chinder_profile">ChinderProfileActivity</string>
+    <string name="title_activity_chinder_matches">ChinderMatchesActivity</string>
+    <string name="title_activity_chinder_messenger">ChinderMessengerActivity</string>
+
+    <string name="action_edit_profile">Edit Profile</string>
+    <string name="action_camera">Take a picture!</string>
+    <string name="action_chat">Chat with a chin!</string>
+    <string name="action_logout">Log Out</string>
+</resources>

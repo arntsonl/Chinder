@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <stroke android:width="3dp"
+                        android:color="#FC5255" android:dashWidth="3dp"/>
+                    <corners android:radius="5dp" />
+                </shape>
+            </item>
+            <item>
+                <bitmap
+                    android:src="@drawable/thumbs_down"
+                    android:gravity="center_horizontal"/>
+            </item>
+        </layer-list>
+    </item>
+</selector>

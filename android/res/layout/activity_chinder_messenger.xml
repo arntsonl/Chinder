@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ListView
+        android:id="@+id/messengerList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transcriptMode="alwaysScroll"
+        android:layout_above="@+id/divider"
+        android:padding="0dip"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:stackFromBottom="true"
+        android:nestedScrollingEnabled="false"
+        android:fastScrollAlwaysVisible="false"
+        android:headerDividersEnabled="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false" />
+
+    <RelativeLayout
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_above="@+id/relSendMessage" />
+
+    <RelativeLayout
+        android:id="@+id/relSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentBottom="true">
+
+
+        <EditText
+            android:layout_marginBottom="-4dp"
+            android:id="@+id/messengerTextField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Tell this chin something..."
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/messengerSendButton"
+            android:layout_alignBottom="@+id/messengerSendButton"
+            android:layout_toLeftOf="@+id/messengerSendButton"
+            />
+
+        <Button
+            android:id="@+id/messengerSendButton"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:text="Send"
+            android:background="@drawable/chinder_button"
+            android:textColor="#000000"
+            android:onClick="sendMessageOnClick" />
+            <!--android:background="@drawable/button_send" -->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

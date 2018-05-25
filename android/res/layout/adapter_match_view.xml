@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="160dp"
+    android:background="@android:color/black">
+    <ImageView
+        android:id="@+id/matchImageView"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/chinder_history_border"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ChinUp, 23"
+        android:id="@+id/matchImageText"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:gravity="left"
+        android:layout_alignTop="@+id/matchImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/matchImageView"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Say something to this chin..."
+        android:id="@+id/matchMessageText"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/matchImageText"
+        android:layout_alignStart="@+id/matchImageText"
+        android:layout_below="@+id/matchImageText"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>
